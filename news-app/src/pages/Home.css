@@ -1,0 +1,46 @@
+
+.home-container {
+    display: flex;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 16px;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+  }
+  
+  .loading-text,
+  .error-text,
+  .no-news-text {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+    padding: 20px;
+  }
+  
+  .loading-text {
+    color: #666;
+  }
+  
+  .error-text {
+    color: red;
+  }
+  
+  .no-news-text {
+    color: #777;
+  }
+  
+  .news-grid {
+    display: grid;
+    gap: 16px;
+  }
+  
+  .news-grid.grid-view {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .news-grid.list-view {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
