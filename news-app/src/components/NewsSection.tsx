@@ -15,7 +15,7 @@ const NewsSection: React.FC<NewsSectionProps> = ({ news, viewType }) => {
       <div className={viewType === "grid" ? "news-grid" : "news-list"}>
         {paginatedNews.map((article, index) => (
           <div key={index} className="news-item">
-            <NewsCard article={article} />
+            <NewsCard article={article} onClick={() => console.log("News clicked")} />
             <button className="delete-btn" onClick={() => console.log("Delete")}>✖</button>
           </div>
         ))}
